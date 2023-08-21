@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body hisse */
+
+.body1 {
+    position: inherit;
+    background-image: url(./homepage-images/backgorund.jpg);
+    background-position: center;
+    background-position-y: -9.5em;
+    width: 100%;
+    height: 100vh;
+}
+
+/* header hisse */
+
+header {
+    background: transparent;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+header .logo1 {
+    display: none;
+}
+
+header .left .logo {
+    margin-left: 1.5em;
+    background-size: cover;
+}
+
+header .right ul {
+    list-style: none;
+}
+
+header .right li {
+    width: 35em;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2em;
+}
+
+header .right a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s all;
+}
+
+
+header .right .linkHome {
+    color: #c49b66;
+}
+
+header .right a:hover {
+    color: #c49b66;
+}
+
+header .bar {
+    display: none;
+}
+
+header .right1 {
+    display: none;
+}
+
+/* Middle Hisse-Text */
+
+.middle .text .yazi {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.middle .text {
+    position: absolute;
+    margin-top: 19em;
+    text-align: center;
+    width: 100%; 
+}
+
+.middle .text .yazi .welc {
+    font-weight: 200;
+    font-size: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.middle .text .yazi .im {
+    font-weight: 200;
+}
+
+.middle .text #changingText {
+    color: #c49b66;
+}
+
+.middle .text .broff {
+    display: none;
+}
+
+/* Middle Hisse-Button */
+
+.buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 32em auto;
+    height: 3em;
+}
+
+.buttons .vw,
+.hm {
+    cursor: pointer;
+    width: 10em;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 2em;
+}
+
+.buttons .vw {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    transition: 1s all;
+}
+
+.buttons .vw:hover {
+    border: 1px solid #c49b66;
+    background-color: #c49b66;
+}
+
+.buttons .hm {
+    margin-left: 5em;
+    border: 1px solid white;
+    background: white;
+    color: #c49b66;
+    transition: 1s all;
+}
+
+.buttons .hm:hover {
+    border: 1px solid #c49b66;
+    color: white;
+    background-color: #c49b66;
+}
+
+/* Text Animation Hisse */
+.animation {
+    animation: slideText 2s ease-in-out;
+}
+
+@keyframes slideText {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+/*!-------------------------------------------------------------------------------------
+
+
+
+/* Responsivlik Mobil Telefon üçün */
+
+@media (max-width: 991px) {
+
+    /* body hisse */
+
+    .body1 {
+        position: inherit;
+        background-image: url(./homepage-images/backgorund.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        background-color: transparent;
+        border: none;
+    }
+
+    .body header {
+        position: fixed;
+        z-index: 1000;
+        position: absolute;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    .middle {
+        text-align: left;
+    }
+
+    header .right1 {
+        position: absolute;
+        display: none;
+        margin-top: 30em;
+        border-radius: 20px;
+        width: 100%;
+        height: 23em;
+        background: #111;
+        opacity: 0.95;
+    }
+
+    header .right1 nav li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 23em;
+    }
+
+    header .right1 a {
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s all;
+    }
+
+    header .right1 .linkHome {
+        color: #c49b66;
+    }
+
+    header .right1 a:hover {
+        color: #c49b66;
+    }
+
+    header .bar {
+        display: block;
+        color: white;
+        margin-right: 2em;
+    }
+
+    header .bar i {
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header .logo1 {
+        display: block;
+    }
+
+    /* Middle Hisse-Text */
+
+    .middle .text .yazi {
+        font-family: 'Josefin', sans-serif;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .middle .text {
+        position: absolute;
+        margin-top: 20em;
+        text-align: center;
+        width: 100%; 
+    }
+    
+    .middle .text .yazi .welc {
+        font-weight: 200;
+        font-size: 22px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .middle .text .yazi .im {
+        font-weight: 200;
+    }
+    
+    .middle .text #changingText {
+        color: #c49b66;
+    }
+    
+    .middle .text .broff {
+        display: block;
+    }
+
+    /* Middle Hisse-Button */
+
+    .buttons {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0 auto;
+        height: 3em;
+        margin-top: 30em;     
+    }
+
+    .buttons .hm {
+        margin-left: -4em;
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+    /* body hisse */
+
+    .body1 {
+        position: inherit;
+        background-image: url(./homepage-images/backgorund.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        background-color: transparent;
+        border: none;
+    }
+
+    .body header {
+        position: fixed;
+        z-index: 1000;
+        position: absolute;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    .middle {
+        text-align: left;
+    }
+
+    header .right1 {
+        position: absolute;
+        display: block;
+        margin-top: 30em;
+        border-radius: 20px;
+        width: 26em;
+        margin-left: 1.2em;
+        height: 23em;
+        background: #111;
+    }
+
+    header .right1 nav li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 23em;
+    }
+
+    header .right1 a {
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s all;
+    }
+
+    header .right1 .linkHome {
+        color: #c49b66;
+    }
+
+    header .right1 a:hover {
+        color: #c49b66;
+    }
+
+    header .bar {
+        display: block;
+        color: white;
+        margin-right: 2em;
+    }
+
+    header .bar i {
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header .logo1 {
+        display: block;
+    }
+
+    /* Middle Hisse-Text */
+
+    .text .topText .welcome {
+        margin-top: 2.3em;
+        margin-left: 6em;
+        color: white;
+        font-size: 2.5em;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.05em;
+    }
+
+    .text .bottomText .me {
+        margin-top: 1em;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3em;
+    }
+
+    .text .bottomText .me .colorText {
+        position: absolute;
+        font-weight: bolder;
+        color: #c49b66;
+        letter-spacing: 0.05em;
+        margin-left: 0.5em;
+    }
+
+    .text .bottomText .me .iam {
+        margin-left: 2.5em;
+    }
+
+    .text {
+        position: absolute;
+        width: 38em;
+        height: 15em;
+        margin: 5em auto;
+        margin-left: 4.5em;
+    }
+
+    /* Middle Hisse-Button */
+
+    .buttons {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: 0 auto;
+        height: 3em;
+        margin-top: 23em;
+        margin-left: 8em;
+    }
+
+}
+
+}
+
+/*NAVBAR ACILANDA SEHIFE BOYUYENDEN ACIQ QALIR*/
